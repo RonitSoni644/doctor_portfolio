@@ -13,6 +13,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  base:process.env.VITE_BASE_PATH|| '/doctor_portfolio',
   server: {
     proxy: {
       '/api': {
