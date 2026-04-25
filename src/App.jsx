@@ -16,7 +16,8 @@ const AppRoutes = () => (
     <Route path="/" element={<Portfolio />} />
     <Route path="/admin/login" element={<AdminLogin />} />
     <Route element={<ProtectedRoute unauthenticatedElement={<AdminLogin />} />}>
-      <Route path="/admin" element={<Admin />} />
+
+    <Route path="/admin" element={<Admin />} />
     </Route>
     <Route path="*" element={<PageNotFound />} />
   </Routes>

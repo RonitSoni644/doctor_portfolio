@@ -56,10 +56,10 @@ export default function Navbar({ doctor }) {
             >
               {isDark ? <Sun size={16} /> : <Moon size={16} />}
             </button>
-            {/* <Link to="/admin"
+            <Link to="/admin"
               className="hidden md:inline-flex items-center px-4 py-2 bg-[#005F54] text-white text-sm font-medium rounded-full hover:bg-[#004740] transition-colors">
               Admin Panel
-            </Link> */}
+            </Link>
             <button
               className={`md:hidden p-2 ${textColor}`}
               onClick={() => setMenuOpen(!menuOpen)}>
