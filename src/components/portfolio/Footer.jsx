@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useTheme } from "@/context/ThemeContext";
 
 export default function Footer({ doctor }) {
@@ -48,10 +49,16 @@ export default function Footer({ doctor }) {
             <h4 className="font-semibold text-sm tracking-widest uppercase mb-4 text-[#005F54]">
               Contact
             </h4>
-            <div className="space-y-2 text-sm text-red">
+            <div className="space-y-3 text-sm text-[#7A9E96]">
               {doctor?.email && <p>📧 {doctor.email}</p>}
               {doctor?.phone && <p>📞 {doctor.phone}</p>}
               {doctor?.location && <p>📍 {doctor.location}</p>}
+              <Link
+                to="/admin"
+                className="inline-flex items-center px-4 py-2 mt-2 bg-[#005F54] text-white text-sm font-medium rounded-full hover:bg-[#004740] transition-colors"
+              >
+                Admin Page
+              </Link>
             </div>
           </div>
         </div>
